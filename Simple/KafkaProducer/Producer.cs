@@ -16,9 +16,9 @@ namespace KafkaProducer
                 {"bootstrap.servers", "localhost:9092"}
             };
 
-            
             _producer = new Producer<Null, string>(config, null, new StringSerializer(Encoding.UTF8));
         }
+
         public void Send(string message)
         {
 

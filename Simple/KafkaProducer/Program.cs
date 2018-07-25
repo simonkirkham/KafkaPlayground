@@ -7,6 +7,7 @@ namespace KafkaProducer
         static void Main(string[] args)
         {
             var producer = new Producer();
+
             while (true)
             {
                 producer.Send(Console.ReadLine());
